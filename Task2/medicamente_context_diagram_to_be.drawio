@@ -1,0 +1,207 @@
+<mxfile host="drawio-plugin" modified="2026-10-29T15:58:51.551Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" etag="Z_PUtXISuxlGFtReQKW5" version="22.1.22" type="embed">
+  <diagram id="medicamente-pbd-context" name="Medicamente - C4 Context To-Be">
+    <mxGraphModel dx="3069" dy="912" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ctx_title" value="«Медикаменте»" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="20" width="560" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_patient" value="Пациент&#xa;[Person]&#xa;Запись, результаты, согласия" style="shape=mxgraph.c4.person;whiteSpace=wrap;html=1;fillColor=#0B4F8A;strokeColor=#073763;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="110" y="240" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_staff" value="Врач / регистратор&#xa;[Person]&#xa;Приёмы и медицинские данные" style="shape=mxgraph.c4.person;whiteSpace=wrap;html=1;fillColor=#0B4F8A;strokeColor=#073763;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="760" y="50" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_cashier" value="Кассир&#xa;[Person]&#xa;Оплата и чеки" style="shape=mxgraph.c4.person;whiteSpace=wrap;html=1;fillColor=#0B4F8A;strokeColor=#073763;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="510" y="120" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_accountant" value="Бухгалтер&#xa;[Person]&#xa;Платежи, кадры, отчётность" style="shape=mxgraph.c4.person;whiteSpace=wrap;html=1;fillColor=#0B4F8A;strokeColor=#073763;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="965" y="60" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_analyst" value="Руководитель / аналитик&#xa;[Person]&#xa;Агрегированные отчёты без PII" style="shape=mxgraph.c4.person;whiteSpace=wrap;html=1;fillColor=#0B4F8A;strokeColor=#073763;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1190" y="180" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_admin" value="Администратор / ИБ&#xa;[Person]&#xa;Администрирование, аудит, MFA/PAM" style="shape=mxgraph.c4.person;whiteSpace=wrap;html=1;fillColor=#0B4F8A;strokeColor=#073763;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1440" y="370" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_warehouse" value="Кладовщик&#xa;[Person]&#xa;ТМЦ и склад" style="shape=mxgraph.c4.person;whiteSpace=wrap;html=1;fillColor=#0B4F8A;strokeColor=#073763;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="100" y="410" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_system_boundary" value="МЕДИКАМЕНТЕ&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 4;fillColor=none;strokeColor=#666666;fontColor=#333333;verticalAlign=top;align=left;spacingLeft=12;spacingTop=8;fontSize=16;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="590" y="390" width="620" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_system" value="МЕДИКАМЕНТЕ&#xa;[Software System]&#xa;Целевая архитектура с Privacy by Design&#xa;Медицина, платежи, учёт, аналитика" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1768AC;strokeColor=#0B5394;fontColor=#FFFFFF;fontSize=15;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="700" y="450" width="400" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_principles" value="Privacy by Design&lt;br&gt;• Согласие, цель, минимизация&lt;br&gt;• RBAC/ABAC, MFA/PAM&lt;br&gt;• TLS/mTLS, шифрование, KMS&lt;br&gt;• Аудит, SIEM, DLP&lt;br&gt;• Retention, удаление, DSAR&lt;br&gt;• Псевдонимизация и обезличивание" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;" parent="1" vertex="1">
+          <mxGeometry x="1200" y="1050" width="360" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_lab" value="Лаборатория&#xa;[Software System]&#xa;Заказы и результаты исследований" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8E7C9E;strokeColor=#6C5B7B;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="60" y="900" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_1c_acc" value="1С: Бухгалтерия&#xa;[Software System]&#xa;Финансовый и кадровый учёт" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8E7C9E;strokeColor=#6C5B7B;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="320" y="900" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_1c_trade" value="1С: Торговля и склад&#xa;[Software System]&#xa;ТМЦ и складской учёт" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8E7C9E;strokeColor=#6C5B7B;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="580" y="900" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_kkm" value="ККМ&#xa;[Software System]&#xa;Чеки и фискализация" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8E7C9E;strokeColor=#6C5B7B;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="840" y="900" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_bank" value="Банк / эквайринг&#xa;[Software System]&#xa;Платежи и выписки" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8E7C9E;strokeColor=#6C5B7B;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="900" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_exchange" value="Exchange&#xa;[Software System]&#xa;Почта и уведомления" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8E7C9E;strokeColor=#6C5B7B;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="900" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_idp" value="AD/LDAP / IdP&#xa;[Software System]&#xa;Аутентификация и MFA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8E7C9E;strokeColor=#6C5B7B;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1480" y="700" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_siem" value="SIEM&#xa;[Software System]&#xa;Аудит, корреляция, алерты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8E7C9E;strokeColor=#6C5B7B;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="780" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_kms" value="KMS / Vault&#xa;[Software System]&#xa;Ключи и секреты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8E7C9E;strokeColor=#6C5B7B;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="190" y="780" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_backup" value="Backup&#xa;[Software System]&#xa;Шифрованные резервные копии" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8E7C9E;strokeColor=#6C5B7B;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="450" y="1050" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_fns" value="ФНС / СФР&#xa;[Software System]&#xa;Регламентная отчётность" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8E7C9E;strokeColor=#6C5B7B;fontColor=#FFFFFF;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="960" y="1050" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_e_patient" value="Запись, результаты, согласия (HTTPS)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_patient" target="ctx_system" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="770" y="295" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_staff" value="Приёмы и медданные (HTTPS)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_staff" target="ctx_system" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="240" />
+              <mxPoint x="860" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_cashier" value="Оплата и чеки (HTTPS)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_cashier" target="ctx_system" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="390" />
+              <mxPoint x="790" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_accountant" value="Платежи, кадры, отчётность (HTTPS)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_accountant" target="ctx_system" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="995" y="380" />
+              <mxPoint x="995" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_analyst" value="Агрегированные отчёты без PII" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_analyst" target="ctx_system" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="235" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_admin" value="Администрирование и аудит (MFA/PAM)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_admin" target="ctx_system" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1285" y="425" />
+              <mxPoint x="1285" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_warehouse" value="ТМЦ и склад (HTTPS)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_warehouse" target="ctx_system" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="490" />
+              <mxPoint x="390" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_lab" value="Заказы и результаты (TLS, allow-list)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_system" target="ctx_lab" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_1c_acc" value="Финансовый обмен (TLS)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_system" target="ctx_1c_acc" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_1c_trade" value="ТМЦ и склад (TLS)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_system" target="ctx_1c_trade" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="765" />
+              <mxPoint x="690" y="765" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_kkm" value="Чеки и фискализация" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_system" target="ctx_kkm" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="700" />
+              <mxPoint x="940" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_bank" value="Платежи и эквайринг" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_system" target="ctx_bank" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="740" />
+              <mxPoint x="1190" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_exchange" value="Почта и уведомления (DLP)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_system" target="ctx_exchange" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1450" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_idp" value="OIDC/SAML, MFA" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_system" target="ctx_idp" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_e_siem" value="События аудита и алерты" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_system" target="ctx_siem" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="10" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_kms" value="Ключи и секреты" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_system" target="ctx_kms" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_backup" value="Шифрованные резервные копии" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_system" target="ctx_backup" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_e_fns" value="Регламентная отчётность" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" parent="1" source="ctx_system" target="ctx_fns" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="840" />
+              <mxPoint x="1060" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="y7V8nITqxw9Wx3uZDmcQ">
+    <mxGraphModel dx="2751" dy="1351" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;" value="Медикаменте — оценка узких мест при миграции" vertex="1">
+          <mxGeometry height="40" width="900" x="300" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="spine" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeWidth=3;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="490" as="sourcePoint" />
+            <mxPoint x="1260" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="effect" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=15;" value="Снижение производительности&#xa;и доступности после миграции" vertex="1">
+          <mxGeometry height="110" width="270" x="1260" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="infra-line" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="infra" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="490" as="sourcePoint" />
+            <mxPoint x="420" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="infra" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;align=left;spacing=8;" value="Инфраструктура&#xa;• Недостаток CPU/RAM&#xa;• Медленные диски&#xa;• Нет резервирования" vertex="1">
+          <mxGeometry height="110" width="170" x="329" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="software-line" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="software" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="490" as="sourcePoint" />
+            <mxPoint x="630" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="software" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;align=left;spacing=8;" value="ПО и архитектура&#xa;• Длинные цепочки вызовов&#xa;• Синхронные зависимости&#xa;• Дублирование логики" vertex="1">
+          <mxGeometry height="110" width="200" x="572.5" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="db-line" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="490" as="sourcePoint" />
+            <mxPoint x="950" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="db" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;align=left;spacing=8;" value="Базы данных&#xa;• Неэффективные запросы&#xa;• Блокировки и пулы&#xa;• Смешение OLTP и отчётов" vertex="1">
+          <mxGeometry height="110" width="230" x="830" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="integration-line" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=2;entryX=0.537;entryY=0.001;entryDx=0;entryDy=0;entryPerimeter=0;" target="integration" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="490" as="sourcePoint" />
+            <mxPoint x="420" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="integration" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;align=left;spacing=8;" value="Интеграции и сеть&#xa;• Задержки ответов 1С&#xa;• Тайм-ауты внешних систем&#xa;• Повторная обработка запросов" vertex="1">
+          <mxGeometry height="100" width="245" x="280" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="people-line" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="people" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="490" as="sourcePoint" />
+            <mxPoint x="630" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="people" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;align=left;spacing=8;" value="Персонал&#xa;• Недостаток опыта&#xa;• Ошибки конфигурации&#xa;• Неясные зоны ответственности" vertex="1">
+          <mxGeometry height="100" width="245" x="550" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="process-line" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="490" as="sourcePoint" />
+            <mxPoint x="940" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="process" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;align=left;spacing=8;" value="Процессы миграции&#xa;• Недостаточно тестов&#xa;• Ошибки переноса данных&#xa;• Нет плана отката" vertex="1">
+          <mxGeometry height="100" width="230" x="820" y="680" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
